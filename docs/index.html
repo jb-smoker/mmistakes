@@ -296,7 +296,6 @@
             --docsifytabs-tab-background: #f7f7f7;
 
         }
-
     </style>
 </head>
 
@@ -306,6 +305,9 @@
         window.$docsify = {
             homepage: 'home.md',
             ga: 'UA-169740652-1',
+            alias: {
+                '/.*/_sidebar.md': '/_sidebar.md'
+            },
             auto2top: true,
             coverpage: false,
             hideSidebar: false,
